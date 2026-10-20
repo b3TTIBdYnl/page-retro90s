@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>★✯★ MIKE'S SUPER COOL GITHUB HOT LIST ★✯★</title>
+<style>
+  /* ============ 90s RADICAL CSS ============ */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Neue", cursive;
+    background: #000080 url('') ;
+    background-image:
+      radial-gradient(1px 1px at 20px 30px, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 90px 10px, #ff0 50%, transparent 51%),
+      radial-gradient(2px 2px at 150px 80px, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 250px 40px, #0ff 50%, transparent 51%),
+      radial-gradient(1px 1px at 320px 120px, #fff 50%, transparent 51%),
+      radial-gradient(2px 2px at 50px 150px, #f0f 50%, transparent 51%);
+    background-size: 400px 200px;
+    color: #ffffff;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M2 2 L2 20 L6 16 L9 22 L12 20 L9 15 L15 15 Z' fill='white' stroke='black'/%3E%3C/svg%3E"), auto;
+  }
+  a { color: #00ffff; }
+  a:visited { color: #ff00ff; }
+
+  /* --- FAKE MARQUEE (CSS anim) --- */
+  .marquee-bar {
+    background: #000;
+    border: 4px ridge #ffff00;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 6px 0;
+    margin: 6px;
+  }
+  .marquee-bar .inner {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 18s linear infinite;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 1px 1px 0 #0f0;
+  }
+  @keyframes scroll-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* --- GLOW TEXT --- */
+  .glow {
+    text-shadow: 0 0 4px #0ff, 0 0 8px #0ff, 0 0 16px #00f;
+  }
+  .glow-pink { text-shadow: 0 0 4px #f0f, 0 0 10px #f0f, 0 0 20px #f0f; }
+  .glow-yellow { text-shadow: 0 0 3px #ff0, 0 0 8px #fa0; }
+
+  h1.maintitle {
+    font-size: 2.4em;
+    text-align: center;
+    color: #ffff00;
+    animation: rainbow 3s linear infinite;
+  }
+  @keyframes rainbow {
+    0% { color: #ff0000; } 20% { color: #ffff00; } 40% { color: #00ff00; }
+    60% { color: #00ffff; } 80% { color: #ff00ff; } 100% { color: #ff0000; }
+  }
+
+  /* --- BRICK WALL FOOTER/HEADER STRIP --- */
+  .brickwall {
+    background:
+      linear-gradient(335deg, #b22222 23px, transparent 23px),
+      linear-gradient(155deg, #b22222 23px, transparent 23px),
+      linear-gradient(335deg, #b22222 23px, transparent 23px),
+      linear-gradient(155deg, #b22222 23px, transparent 23px);
+    background-color: #8b0000;
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px;
+    padding: 10px;
+    text-align: center;
+    border: 4px ridge #d0a070;
+  }
+
+  /* --- BLINK (the classic!) --- */
+  .blink { animation: blink 1s step-start infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  table.main {
+    width: 92%;
+    margin: 12px auto;
+    border-collapse: separate;
+    border-spacing: 4px;
+    background: #333366;
+    border: 6px ridge #c0c0c0;
+  }
+  table.main th {
+    background: #000080;
+    color: #ffff00;
+    font-size: 1.1em;
+    padding: 8px;
+    border: 3px inset #808080;
+  }
+  table.main td {
+    background: #000033;
+    padding: 8px;
+    border: 3px inset #808080;
+    vertical-align: top;
+    font-family: "Courier New", monospace;
+    font-size: 0.95em;
+  }
+  .starcount {
+    color: #ffff00;
+    font-weight: bold;
+    text-shadow: 0 0 6px #ff0;
+  }
+  .lang {
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 1px 5px;
+    border-radius: 8px;
+    font-size: 0.85em;
+  }
+  .hot { color: #ff4500; font-weight: bold; }
+
+  /* --- UNDER CONSTRUCTION SIGN (pure CSS) --- */
+  .under-const {
+    display: inline-block;
+    background: repeating-linear-gradient(
+      45deg, #000 0 14px, #ffcc00 14px 28px);
+    border: 3px solid #000;
+    padding: 10px 24px;
+    margin: 10px auto;
+    animation: stripes 1.2s linear infinite;
+  }
+  @keyframes stripes {
+    from { background-position: 0 0; }
+    to   { background-position: 40px 0; }
+  }
+  .under-const .text {
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    padding: 2px 8px;
+    font-family: "Courier New", monospace;
+  }
+
+  /* --- VISITOR COUNTER --- */
+  .counter-box {
+    display: inline-block;
+    background: #000;
+    border: 4px ridge #808080;
+    padding: 6px 10px;
+    font-family: "Courier New", monospace;
+    font-size: 1.5em;
+    letter-spacing: 6px;
+    color: #00ff00;
+    text-shadow: 0 0 8px #0f0;
+  }
+
+  .top-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background: #ff00ff;
+    color: #ffff00;
+    border: 3px outset #ff69b4;
+    padding: 10px 14px;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .top-btn:hover { background: #ffff00; color: #ff00ff; }
+
+  .hr-rainbow {
+    height: 8px;
+    border: none;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 200px 100%;
+    animation: rainbow-slide 2s linear infinite;
+    margin: 14px auto;
+    width: 90%;
+  }
+  @keyframes rainbow-slide { to { background-position: 200px 0; } }
+
+  .badge {
+    display: inline-block;
+    width: 88px; height: 31px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 9px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin: 3px;
+    border: 1px outset #ccc;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+  }
+  footer { text-align: center; padding: 20px; font-size: 0.9em; }
+  .webring { color: #ffff00; text-align:center; margin: 10px; }
+</style>
+</head>
+<body>
+
+<div class="marquee-bar"><span class="inner">★ WELCOME TO MY HOMEPAGE !!! ★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 AT 800x600 ★ SIGN MY GUESTBOOK !!! ★ ALL 8 PROJECTS ARE 100% CERTIFIED HOT ★ NO FRAMES REQUIRED ★</span></div>
+
+<div class="brickwall">
+  <h1 class="maintitle glow glow-yellow">~*~ MEGA GITHUB HOT LIST ~*~</h1>
+  <p style="text-align:center; color:#fff; font-weight:bold;">
+    &lt;&lt; The 8 Hottest Repos On The Information Superhighway &gt;&gt;
+  </p>
+</div>
+
+<hr class="hr-rainbow">
+
+<p style="text-align:center;">
+  <span class="under-const"><span class="text">🚧 UNDER CONSTRUCTION 🚧</span></span>
+</p>
+<p style="text-align:center;" class="blink glow">NEW!!! Updated daily!!! Bookmark this page NOW!!!</p>
+
+<table class="main">
+  <tr>
+    <th width="4%">#</th>
+    <th width="28%">PROJECT</th>
+    <th width="40%">DESCRIPTION</th>
+    <th width="10%">LANG</th>
+    <th width="10%">STARS</th>
+    <th width="8%">STATUS</th>
+  </tr>
+
+  <tr>
+    <td align="center">1</td>
+    <td><a href="https://github.com/MadsLorentzen/ai-job-search"><b>MadsLorentzen/ai-job-search</b></a></td>
+    <td>The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews.</td>
+    <td align="center"><span class="lang">Python</span></td>
+    <td align="center"><span class="starcount">57,667 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">2</td>
+    <td><a href="https://github.com/anomalyco/opencode"><b>anomalyco/opencode</b></a></td>
+    <td>The open source coding agent.</td>
+    <td align="center"><span class="lang">TypeScript</span></td>
+    <td align="center"><span class="starcount">217,933 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">3</td>
+    <td><a href="https://github.com/akitaonrails/ai-memory"><b>akitaonrails/ai-memory</b></a></td>
+    <td>Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors.</td>
+    <td align="center"><span class="lang">Rust</span></td>
+    <td align="center"><span class="starcount">11,451 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">4</td>
+    <td><a href="https://github.com/Comfy-Org/ComfyUI"><b>Comfy-Org/ComfyUI</b></a></td>
+    <td>The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.</td>
+    <td align="center"><span class="lang">Python</span></td>
+    <td align="center"><span class="starcount">139,863 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">5</td>
+    <td><a href="https://github.com/ruvnet/ruflo"><b>ruvnet/ruflo</b></a></td>
+    <td>The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems.</td>
+    <td align="center"><span class="lang">TypeScript</span></td>
+    <td align="center"><span class="starcount">77,285 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">6</td>
+    <td><a href="https://github.com/stablyai/orca"><b>stablyai/orca</b></a></td>
+    <td>Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription.</td>
+    <td align="center"><span class="lang">TypeScript</span></td>
+    <td align="center"><span class="starcount">98,430 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">7</td>
+    <td><a href="https://github.com/headroomlabs-ai/headroom"><b>headroomlabs-ai/headroom</b></a></td>
+    <td>Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON.</td>
+    <td align="center"><span class="lang">Python</span></td>
+    <td align="center"><span class="starcount">76,311 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+
+  <tr>
+    <td align="center">8</td>
+    <td><a href="https://github.com/withmarbleapp/os-taxonomy"><b>withmarbleapp/os-taxonomy</b></a></td>
+    <td>Operating system taxonomy project.</td>
+    <td align="center"><span class="lang">JavaScript</span></td>
+    <td align="center"><span class="starcount">6,213 ★</span></td>
+    <td align="center"><span class="hot">HOT!!!</span></td>
+  </tr>
+</table>
+
+<hr class="hr-rainbow">
+
+<table style="margin:0 auto; border:none; background:transparent;">
+  <tr>
+    <td style="text-align:center; background:transparent; border:none; color:#ffff00;" class="glow glow-yellow">
+      <b>You are visitor number:</b><br>
+      <span class="counter-box" id="hitcounter">0000000</span><br>
+      <small>Counter powered by MEGA-HITS&trade; WEB COUNTER</small>
+    </td>
+  </tr>
+</table>
+
+<p class="webring">
+  [ <a href="#top">&lt;&lt; PREV SITE</a> ]
+  [ <a href="#top">RANDOM</a> ]
+  [ <a href="#top">NEXT SITE &gt;&gt;</a> ]<br>
+  <small>This site is part of the COOL CODERS WEBRING</small>
+</p>
+
+<p style="text-align:center;">
+  <span class="badge" style="background:#000080;">NETSCAPE NOW!</span>
+  <span class="badge" style="background:#800080;">MADE WITH NOTEPAD</span>
+  <span class="badge" style="background:#006600;">Y2K READY</span>
+  <span class="badge" style="background:#800000;">IE 4.0 OK</span>
+  <span class="badge" style="background:#444;">NO COOKIES*</span>
+</p>
+
+<div class="marquee-bar"><span class="inner">THANKS FOR VISITING !!! COME BACK SOON !!! EMAIL ME AT webmaster@geocities.COM !!! BEST VIEWED WITH MONITOR ON !!!</span></div>
+
+<footer>
+  <p class="glow-pink" style="color:#ff69b4;"><b>© 1998-∞ Mike's Web Emporium. All Rights Reversed.</b></p>
+  <p style="color:#aaa;">*This page contains zero cookies. Guaranteed. Pinky swear.</p>
+</footer>
+
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲ BACK 2 TOP ▲</button>
+
+<script>
+  // Radical visitor counter, totally real, not fake at all
+  (function () {
+    var el = document.getElementById('hitcounter');
+    var base = 1337000 + Math.floor(Math.random() * 500);
+    var shown = 0;
+    var iv = setInterval(function () {
+      shown += Math.max(1, Math.floor((base - shown) / 12));
+      if (shown >= base) { shown = base; clearInterval(iv); }
+      el.textContent = ('0000000' + shown).slice(-7);
+    }, 40);
+  })();
+
+  // Secret konami-ish easter egg: type "kewl"
+  var buf = '';
+  document.addEventListener('keydown', function (e) {
+    buf = (buf + e.key).slice(-4).toLowerCase();
+    if (buf === 'kewl') {
+      document.body.style.transform = 'rotate(360deg)';
+      document.body.style.transition = 'transform 1s';
+      setTimeout(function(){ document.body.style.transition=''; document.body.style.transform=''; }, 1100);
+    }
+  });
+</script>
+</body>
+</html>
